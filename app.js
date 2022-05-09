@@ -4,6 +4,12 @@ const second = document.getElementById('second');
 const clock = document.getElementById('clock');
 const colon = document.getElementsByClassName('colon');
 
+
+let hours;
+let minutes;
+let seconds;
+let isPM;
+
 function hideColon() {
     for (c of colon) {
             c.style.color = 'black'
@@ -15,12 +21,6 @@ function showColon() {
             c.style.color = 'white'
         }
 }
-
-
-let hours;
-let minutes;
-let seconds;
-let isPM;
 
 function setTime() {
     const today = new Date();
@@ -52,9 +52,7 @@ if (isPM) {
     pm.innerText = "PM";
     pm.classList.add('pm')
     clock.appendChild(pm)
-    
 }
-
 
 setInterval(setTime,1000)
 setInterval(hideColon, 2000)
