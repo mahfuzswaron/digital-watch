@@ -7,7 +7,7 @@ h1{
 
 }
 .clock-div{
-    border: 5px solid rgb(255, 0, 0);
+    border: 7px solid #0062FF;
     border-radius: 50px;   
     background-color: black;
     width: 60%;
@@ -25,25 +25,29 @@ h1{
     margin-left: 10px;
     font-size:medium;
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif  ;
-    /* position: relative;
-    bottom: 2px; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 .clock-div p{
     margin: auto;
     font-size: 5rem;
 }
 span{
-    color: rgb(255, 5, 5);
+    color: #0062FF;
 }
 .colon{
     color: white;
-    position: relative;
-    bottom: 4px;
+}
+footer p{
+    font-family: monospace;
+    font-size: large;
+    margin-top: 100px;
 }
 
 /* responsive for mobile  */
  @media (max-width : 425px) {
+     h1{
+         font-size: 2rem;
+     }
      .clock-div{
          width: 80%;
          height: 40vh;
@@ -51,5 +55,8 @@ span{
      }
     .clock-div p{
          font-size: 1em;
+    }
+    .pm{
+        font-size: x-small;
     }
 } 
